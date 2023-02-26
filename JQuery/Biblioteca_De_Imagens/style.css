@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #6857d2;
+}
+
+header {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+    background-color: #1e1d57;
+}
+
+header h1 {
+    color: aliceblue;
+}
+
+header button {
+    width: 100px;
+    height: 30px;
+    padding: 0 8px;
+
+    color: aliceblue;
+    font-weight: bold;
+
+    border: 0;
+    border-radius: 6px;
+    background-color: #bd52a6;
+}
+
+header button:hover {
+    cursor: pointer;
+}
+
+.add_images_input {
+    display: none;
+    text-align: center;
+    padding: 15px 0 30px 0;
+    background-color: black;
+}
+
+.add_images_input h2 {
+    margin-bottom: 16px;
+    padding: 10px;
+    color: aliceblue;
+}
+
+.container-input-salvar-imagem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+}
+
+.add_images_input div input {
+    width: 250px;
+    color: white;
+    padding: 3px 5px;
+
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid white;
+
+    background-color: transparent;
+}
+
+::-webkit-input-placeholder {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.add_images_input div button.salvar-imagem {
+    width: 72px;
+    padding: 4px;
+
+    font-weight: bold;
+
+    border-radius: 6px;
+    background-color: aliceblue;
+}
+
+.add_images_input div button.salvar-imagem:hover {
+    cursor: pointer;
+}
+
+.add_images_input div button.cancelar-envio {
+    width: 72px;
+    padding: 4px;
+
+    font-weight: bold;
+    color: aliceblue;
+
+    border-radius: 6px;
+    background-color: red;
+}
+
+.add_images_input div button.cancelar-envio:hover {
+    cursor: pointer;
+}
+
+#galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+    padding: 30px 20px;
+}
+
+.container-image {
+    width: 250px;
+    text-align: center;
+
+    position: relative;
+}
+
+.container-image a {
+    text-decoration: none;
+    opacity: 0;
+}
+
+.container-image:hover > a {
+    opacity: 1;
+}
+
+.container-image a h3 {
+    width: 100%;
+    padding: 8px;
+    color: white;
+    font-size: small;
+    background-color: rgba(0, 0, 0, 0.8);
+
+    position: absolute;
+    bottom: 0;
+}
+
+.image {
+    width: 250px;
+    height: 100%;
+}
+
